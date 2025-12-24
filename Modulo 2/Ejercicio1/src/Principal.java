@@ -1,22 +1,34 @@
 
-// Nombre de la clase y el archivo tienen que tener el mismo nombre
-// Cada palabra la 1ra letra en mayuscula
-public class Principal {
-	static int  variableGlobal = 1000;
-	// entry point ( punto de arranque )
-	// método
+public class Principal { // ClasePrincipal  camelCase
+	static int variableGlobal = 23122025;
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.print("Hola Mundo !!!");
-		int valorProductoBonita  =0;
-		int a1 = 0;
+		System.out.println("Hola Mundo !!!");
+ 
 		
-		System.out.print("" + a1 + " " + variableGlobal);
+		int a = 0;
+		int promedioNotas = 0;
+		int clase = 0;
+
+		int numero1 = 0;
+		int numero2 = 0;
+//		int #hola = 0;
+/*
+ * 		ejemplos para declarar 
+ * 		variables numericas (int)
+ * 		
+ */
+		int numero3;
+		numero3 = 10;
+		System.out.println("numero 3 = " + numero3);
+		System.out.println("Variable = " + variableGlobal);
 		
-		a1 = 15;		
+		// case sensitive
+		String nombre = "Juan";
+//		string apellido = "Diaz"; // da error pq es minuscula
 		
-		int a2 = 100;
-		a2 = 1000;
+		
 	}
 
 }
