@@ -20,8 +20,13 @@ public class Principal {
 		System.out.println("La suma es: " + resultado);
 		
 		
+		System.out.print("Ingrese numero a elevar:");
+		numero1 = leer.nextInt();
 		
-		
+		resultado = (int)Math.pow(numero1, 2);
+		System.out.println("El resultado es: " + resultado);
+		resultado = numero1 * numero1; 
+		System.out.println("El resultado es: " + resultado);
 	}
 
 }
