@@ -27,6 +27,21 @@ public class Principal {
 		System.out.println("El resultado es: " + resultado);
 		resultado = numero1 * numero1; 
 		System.out.println("El resultado es: " + resultado);
+		
+		// 1ra letra de cada palabra en mayuscula    ClaseBonita  ClaseSuperBonita
+		String palabra1;
+		String palabra2;
+		
+		System.out.println("****  Ingreso de palabras ****");
+		System.out.print("Ingrese 1ra palabra: ");
+		palabra1 = leer.next();
+		System.out.print("Ingrese 2da palabra: ");
+		palabra2 = leer.next();
+		
+		System.out.println("Resultado: " + palabra1 + " " + palabra2);
+	
+		System.out.println("Los nros son iguales? " + (numero1== numero2));
+		
 	}
 
 }
