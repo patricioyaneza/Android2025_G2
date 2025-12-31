@@ -5,7 +5,11 @@ public class Principal {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		// definir variables
-		double numero1 = 0.0;
+		int n1;
+		n1 = 0;
+		System.out.println(n1);
+		
+		double numero1 = 0.0;	// float	
 		double numero2 = 0.0;
 		double suma = 0;
 		double resta= 0;
@@ -38,6 +42,8 @@ public class Principal {
 		System.out.println("La division es       : " + division);
 		System.out.println("Exponente       		: " + exponente);
 		
+		final double IVA= 1.19;
+		System.out.println("El total con iva es: " + (1000*IVA));
 		
 	}
 
