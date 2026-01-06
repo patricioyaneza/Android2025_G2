@@ -6,6 +6,7 @@ public class Principal {
 		// TODO Auto-generated method stub
 		Scanner leer = new Scanner(System.in);
 		
+		
 		int numero1;
 		int numero2;
 		int resultado;
@@ -41,7 +42,7 @@ public class Principal {
 		System.out.println("Resultado: " + palabra1 + " " + palabra2);
 	
 		System.out.println("Los nros son iguales? " + (numero1== numero2));
-		
 	}
 
+		
 }

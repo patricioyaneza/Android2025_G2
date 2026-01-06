@@ -8,6 +8,8 @@ public class Principal2 {
 // calcula 3 numeros
 		int resultado2 = 2+(4*5);// TIPOS DATOS EN JAVA
 		double resultado3 = 5*4/3.0; // como mostrar solo 4 DECIMALES
+		//resultado3 = (double)5*4/3;
+		
 		
 		int resultado4 = 5*(4+3);
 
@@ -15,6 +17,7 @@ public class Principal2 {
 		System.out.println(resultado2);
 		System.out.println(resultado3);
 		System.out.println(resultado4);
+		System.out.println("El resultado: " + String.format("%.2f" , resultado3));
 	}
 
 }
