@@ -20,7 +20,7 @@ public class Principal2 {
 		} else {
 			System.out.println("Tercera edad");
 		}
-
+// otra forma de realizarlo
 		if (edad <= 12) {
 			System.out.println("Es niño");
 		} else if (edad <= 17) {
