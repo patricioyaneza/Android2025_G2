@@ -19,6 +19,7 @@ public class Principal4 {
 		String usuario2 = sc.nextLine();
 
 //		if (usuario2.equals(usuario)) {
+//		if (usuario2.intern() == usuario.intern() ) {
 		if (usuario2.equalsIgnoreCase(usuario)) {
 //			if (usuario2 == usuario) { // no comparar con ==
 
@@ -30,7 +31,7 @@ public class Principal4 {
 			} else {
 				System.out.println("Clave incorrecta.");
 			}
-
+			
 		} else {
 			System.out.println("Usuario no existe.");
 		}

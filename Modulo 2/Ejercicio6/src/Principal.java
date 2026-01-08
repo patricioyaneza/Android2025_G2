@@ -10,7 +10,7 @@ public class Principal {
 		if(valor > 0)
 		{
 			System.out.println("El número es positivo. 1");
-		}
+		}		
 		
 		if(valor < 0)
 		{
