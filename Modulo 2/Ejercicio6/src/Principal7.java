@@ -41,7 +41,7 @@ public class Principal7 {
 			default:
 				System.out.println("Dispositivo no válido");
 		}
-		
+		System.out.println("Fin");
 		
 	}
 
