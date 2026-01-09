@@ -27,7 +27,7 @@ public class Principal {
 		// substring  2 sobrecarga
 		System.out.println("Substring 1         : " + frase.substring(15));
 		System.out.println("Substring 1         : " + frase.substring(15,19));
-		
+
 		
 	}
 
