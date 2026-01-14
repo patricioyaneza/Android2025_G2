@@ -36,6 +36,11 @@ public class Principal5 {
  * 
  * TAREA:
  * buscar el archivo en su equipo con el nombre java.exe
+*
+*		funciones
+*
+*
+*
  */
 			if(opcion>4 || opcion<0) {
 				System.out.println("La opción ingresada no es válida");
