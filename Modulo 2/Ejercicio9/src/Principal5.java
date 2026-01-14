@@ -16,6 +16,8 @@ public class Principal5 {
 			System.out.println("************* Menú *************");
 			System.out.println("1.- Sumar");
 			System.out.println("2.- Restar");
+			System.out.println("3.- Multiplicar");
+			System.out.println("4.- Dividir");
 			System.out.println("0.- Salir");
 			System.out.print("Ingrese su opción: ");
 			opcion = leer.nextInt();
@@ -50,6 +52,24 @@ public class Principal5 {
 				System.out.println("===== Restar =====");
 				resultado = valor1 - valor2;
 				System.out.println("El resultado es: " + resultado);
+			}
+			else if(opcion == 3)
+			{
+				System.out.println("===== Multiplicar =====");
+				resultado = valor1 * valor2;
+				System.out.println("El resultado es: " + resultado);
+			}
+			else if(opcion == 4)
+			{
+				System.out.println("===== Dividir =====");
+				
+				if(valor2 == 0)
+					System.out.println("No se puede dividir por cero");
+				else
+				{
+					resultado = valor1 / valor2;
+					System.out.println("El resultado es: " + resultado);
+				}
 			}
 			
 			System.out.println("Presione enter para continuar... ");
