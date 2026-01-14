@@ -23,6 +23,11 @@ public class Principal5 {
  * Ejercicio 15:
  *  Solicitar 2 numeros y sumar o restar de acuerdo a lo que el 
  *  usuario seleccionó
+ * 
+ * Ejercicio 16:
+ * agregar multiplicación y división.   
+ * Validar que en la división el divisor no sea cero
+ * 
  */
 			if(opcion == 0)
 				break;
