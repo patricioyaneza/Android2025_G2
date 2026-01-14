@@ -33,7 +33,18 @@ public class Principal5 {
  * Ejercicio 17:
  * Validar que solo se permita los numeros que muestra el menu 
  * 
+ * 
+ * TAREA:
+ * buscar el archivo en su equipo con el nombre java.exe
  */
+			if(opcion>4 || opcion<0) {
+				System.out.println("La opción ingresada no es válida");
+				System.out.println("Presione enter para continuar...");
+				leer.nextLine();
+				leer.nextLine();
+				continue;
+			}
+			
 			if(opcion == 0)
 				break;
 			
