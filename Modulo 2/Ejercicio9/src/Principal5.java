@@ -30,6 +30,9 @@ public class Principal5 {
  * agregar multiplicación y división.   
  * Validar que en la división el divisor no sea cero
  * 
+ * Ejercicio 17:
+ * Validar que solo se permita los numeros que muestra el menu 
+ * 
  */
 			if(opcion == 0)
 				break;
