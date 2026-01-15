@@ -18,6 +18,7 @@ public class Principal5 {
 			System.out.println("2.- Restar");
 			System.out.println("3.- Multiplicar");
 			System.out.println("4.- Dividir");
+			System.out.println("5.- Potencia");
 			System.out.println("0.- Salir");
 			System.out.print("Ingrese su opción: ");
 			opcion = leer.nextInt();
@@ -37,12 +38,12 @@ public class Principal5 {
  * TAREA:
  * buscar el archivo en su equipo con el nombre java.exe
 *
-*		funciones
+*		funciones --> metodo
 *
 *
 *
  */
-			if(opcion>4 || opcion<0) {
+			if(opcion < 0 || opcion > 5) {
 				System.out.println("La opción ingresada no es válida");
 				System.out.println("Presione enter para continuar...");
 				leer.nextLine();
@@ -90,13 +91,28 @@ public class Principal5 {
 					System.out.println("El resultado es: " + resultado);
 				}
 			}
-			
+			else if(opcion == 5)
+			{
+				System.out.println("===== Potencia =====");
+				resultado = obtenerPotencia(valor1, valor2);
+				System.out.println("El resultado es: " + resultado);
+			}
 			System.out.println("Presione enter para continuar... ");
 			leer.nextLine();
 			leer.nextLine();
 		}
 		
 		System.out.println("______ Aplicación cerrada _______");
+	} // fin del metodo main
+// metodo
+	public static int obtenerPotencia(int base, int exponente)
+	{
+		//int resultado = (int) Math.pow(base, exponente);
+		//return resultado;
+		
+		return (int)Math.pow(base, exponente);
 	}
-
+	
+	
+	
 }
