@@ -20,4 +20,15 @@ public class Automovil {
 	}
 	
 	// metodos propios
+	
+	public void imprimir()
+	{
+		System.out.println("\n=========== Datos del Automóvil =============");
+		System.out.println("Patente    : " + this.patente);
+		System.out.println("Marca      : " + this.marca);
+		System.out.println("Modelo     : " + this.modelo);
+		System.out.println("=============================================");
+
+		// ultra wide  -> 16:9   21:9 
+	}
 }
