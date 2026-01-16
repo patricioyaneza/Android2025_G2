@@ -109,7 +109,8 @@ public class Principal5 {
 	{
 		//int resultado = (int) Math.pow(base, exponente);
 		//return resultado;
-		
+		// jar
+
 		return (int)Math.pow(base, exponente);
 	}
 	
