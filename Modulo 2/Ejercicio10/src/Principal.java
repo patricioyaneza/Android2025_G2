@@ -18,13 +18,25 @@ public class Principal {
 		System.out.print("Ingrese modelo :");
 		modelo = leer.next();
 		
-		Automovil auto1 = new Automovil(patente, marca, modelo);
-		Automovil auto2 = new Automovil("jGgg90", "BWM", "AS40");
-		
+		Vehiculo auto1 = new Vehiculo(patente, marca, modelo);
+		Vehiculo auto2 = new Vehiculo("jGgg90", "BWM", "AS40");
 		
 		auto1.imprimir();
 		auto2.imprimir();
 		
+		auto2.setModelo("AT400"); // Permite modificar el modelo
+		auto2.imprimir();
+		
+		// Mini Ejercicio: Imprimir la marca del auto2  // permite obtener la marca
+		System.out.println("marca auto 2: " + auto2.getMarca());
+	
+
+		Vehiculo auto3 = new Vehiculo();
+		// Mini ejercicio: Agregar los datos requeridos por Vehiculo
+		auto3.setModelo("j-258");
+		auto3.setMarca("volvo");
+		auto3.setPatente("bl0489");
+		auto3.imprimir();
 	}
 
 }
