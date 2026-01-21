@@ -7,7 +7,6 @@ public class Cuenta {
 	private double saldoCuenta;
 	// constructor
 	public Cuenta () {
-
 		this.nombreTitular = "";
 		this.numeroCuenta = 0;
 		this.saldoCuenta = 0;
