@@ -1,4 +1,6 @@
 
+// super clase
+// definir todo lo que sea general para que pueda ser heredado
 public class Vehiculo {
 
 	// atributos
