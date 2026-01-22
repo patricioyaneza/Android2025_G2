@@ -2,33 +2,26 @@
 public class Vehiculo {
 
 	// atributos
-	// tipo de dato nombre    
-	// encapsular 
 	 private String patente;
 	 private String marca;
 	 private String modelo;
-/*	
-	String color;
-	int precioCosto;
-	int precioVenta;
-*/
+
 	// metodo constructor
-	// new Vehiculo();
 	public Vehiculo()
 	{
 		this.patente = "";
 		this.marca = "";
 		this.modelo = "";
 	}
-	// new Vehiculo("fasd30","Toyota", "asf 60");
+
 	public Vehiculo(String patente, String marca, String modelo) 
 	{
 		this.patente = patente;
 		this.marca = marca;
 		this.modelo = modelo;
 	}	
-	// getter & setter
 	
+	// getter & setter	
 	public String getPatente() {
 		return patente;
 	}
@@ -65,7 +58,5 @@ public class Vehiculo {
 		System.out.println("Marca      : " + this.marca);
 		System.out.println("Modelo     : " + this.modelo);
 		System.out.println("=============================================");
-
-		// ultra wide  -> 16:9   21:9 
 	}
 }

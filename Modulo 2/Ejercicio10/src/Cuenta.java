@@ -42,7 +42,7 @@ public class Cuenta {
 	// metodos personalizados o propios
 	public void imprimir() {
 
-		System.out.println("========================== Creando Cuenta ==========================");
+		System.out.println("========================== Cuenta Registrada ==========================");
 		System.out.println();
 		System.out.println("Ingrese número de la cuenta             : " + this.numeroCuenta);
 		System.out.println("Ingrese saldo inicial de la cuenta      : " + this.saldoCuenta);
