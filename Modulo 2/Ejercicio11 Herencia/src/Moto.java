@@ -6,6 +6,7 @@ public class Moto extends Vehiculo {
 	// constructor
 	
 	public Moto() {
+		super();
 		this.medidaManillar = 0;
 		this.estilo = "";
 	}

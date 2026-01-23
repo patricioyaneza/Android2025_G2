@@ -25,10 +25,18 @@ public class Principal {
 		automovil.setPatente("SZ7590");
 		automovil.setMarca("Toyota");
 		automovil.setModelo("FH5544");
-		automovil.setAireAcondicionado(true);
+		automovil.setAireAcondicionado(false);
 		automovil.setCantidadPuertas(5);
-		automovil.setCajaCambios("Mecanica");
+		automovil.setCajaCambios("Mecánica");
 		automovil.imprimir();
+		
+		System.out.println("\nDetalles técnicos");
+		automovil.caracteristicas();
+		
+
+		Automovil automovil2 = new Automovil("qwer60", "peogeut", "308", 5, "Automática", false);
+		automovil2.imprimir();
+		
 	}
 
 }

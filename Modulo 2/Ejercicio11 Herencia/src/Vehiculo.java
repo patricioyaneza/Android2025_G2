@@ -9,7 +9,7 @@ public class Vehiculo {
 	 private String modelo;
 
 	// metodo constructor
-	public Vehiculo()
+	public Vehiculo() // new Vehiculo();
 	{
 		this.patente = "";
 		this.marca = "";
@@ -17,7 +17,7 @@ public class Vehiculo {
 	}
 
 	public Vehiculo(String patente, String marca, String modelo) 
-	{
+	{// new Vehiculo("afsd30", "Fiuat", "600");
 		this.patente = patente;
 		this.marca = marca;
 		this.modelo = modelo;

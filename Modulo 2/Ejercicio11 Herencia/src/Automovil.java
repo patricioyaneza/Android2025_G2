@@ -12,12 +12,14 @@ public class Automovil extends Vehiculo {
 	* Constructors
 	*/
 	public Automovil() {
+		super();
 		this.cantidadPuertas = 0;
 		this.cajaCambios = "";
 		this.aireAcondicionado = false;
 	}
 
-	public Automovil(int cantidadPuertas, String cajaCambios, boolean aireAcondicionado) {
+	public Automovil(String patente, String marca, String modelo, int cantidadPuertas, String cajaCambios, boolean aireAcondicionado) {
+		super(patente, marca, modelo);
 		this.cantidadPuertas = cantidadPuertas;
 		this.cajaCambios = cajaCambios;
 		this.aireAcondicionado = aireAcondicionado;
@@ -53,7 +55,7 @@ public class Automovil extends Vehiculo {
 
 	@Override
 	public void imprimir() {
-		System.out.println("\n ======================= Datos del Automovil =======================");
+		System.out.println("\n======================= Datos del Automovil =======================");
 		System.out.println("Patente      : " + getPatente());
 		System.out.println("Marca        : " + getMarca());
 		System.out.println("Modelo       : " + getModelo());
@@ -61,18 +63,18 @@ public class Automovil extends Vehiculo {
 		System.out.println("Tipo de caja : " + this.cajaCambios);
 
 		if (this.aireAcondicionado)
-			System.out.println("Asientos     : CON Aire Acondicionado");
+			System.out.println("Otros        : CON Aire Acondicionado");
 		else
-			System.out.println("Asientos     : SIN Aire Acondicionado");
+			System.out.println("Otros        : SIN Aire Acondicionado");
 
-		System.out.println("\n ===================================================================");
+		System.out.println("\n===================================================================");
 	}
 	
 	public void caracteristicas()
 	{
 		System.out.println("Asientos           : " + this.cantidadPuertas);
 		System.out.println("Tipo de caja       : " + this.cajaCambios);
-		System.out.println("Aire Acondicionado : " + this.aireAcondicionado);
+		System.out.println("Aire Acondicionado : " + (aireAcondicionado ? "Sí" : "No"));
 	}
 
 }
