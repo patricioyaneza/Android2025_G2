@@ -28,6 +28,11 @@ public class Principal {
 		 */
 		 
 		System.out.println("Nombre " + cuentaDolar1.getNombreTitular());
+		
+		Cuenta cuenta = new Cuenta(10000, "ana", 0);
+		cuenta.imprimir();		
+		cuenta.depositar(9999);		
+		cuenta.imprimir();
 	}
 
 }

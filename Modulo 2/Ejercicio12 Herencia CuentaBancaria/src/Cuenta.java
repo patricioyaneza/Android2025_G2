@@ -51,9 +51,14 @@ public class Cuenta {
 		System.out.println("====================================================================");
 	}
 	
-	public void depositar()
-	{
-		
+	public void depositar(double montoDeposito) {
+		if (montoDeposito<=0)
+			System.out.println("No se puede realizar operacion el monto a depositar debe ser mayor a 0");
+		else
+		{
+			this.saldoCuenta+=montoDeposito;
+			System.out.println("\nDepósito de $ " + montoDeposito + " realizado, el nuevo saldo es $ " + this.saldoCuenta);	
+		}
 	}
 	
 	public void retirar() // girar desde la cuenta
