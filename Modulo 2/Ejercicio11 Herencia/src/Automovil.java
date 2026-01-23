@@ -4,7 +4,7 @@ public class Automovil extends Vehiculo {
 	 * Atributos exclusivos de los automoviles
 	 */
 
-	private int cantPuertas;
+	private int cantidadPuertas;
 	private String cajaCambios;
 	private boolean aireAcondicionado; // true con aire false sin aire
 
@@ -12,13 +12,13 @@ public class Automovil extends Vehiculo {
 	* Constructors
 	*/
 	public Automovil() {
-		this.cantPuertas = 0;
+		this.cantidadPuertas = 0;
 		this.cajaCambios = "";
 		this.aireAcondicionado = false;
 	}
 
-	public Automovil(int cantPuertas, String cajaCambios, boolean aireAcondicionado) {
-		this.cantPuertas = cantPuertas;
+	public Automovil(int cantidadPuertas, String cajaCambios, boolean aireAcondicionado) {
+		this.cantidadPuertas = cantidadPuertas;
 		this.cajaCambios = cajaCambios;
 		this.aireAcondicionado = aireAcondicionado;
 	}
@@ -27,12 +27,12 @@ public class Automovil extends Vehiculo {
 	 * getters and setters
 	 */
 
-	public int getCantPuertas() {
-		return cantPuertas;
+	public int getCantidadPuertas() {
+		return cantidadPuertas;
 	}
 
-	public void setCantPuertas(int cantPuertas) {
-		this.cantPuertas = cantPuertas;
+	public void setCantidadPuertas(int cantPuertas) {
+		this.cantidadPuertas = cantPuertas;
 	}
 
 	public String getCajaCambios() {
@@ -54,10 +54,10 @@ public class Automovil extends Vehiculo {
 	@Override
 	public void imprimir() {
 		System.out.println("\n ======================= Datos del Automovil =======================");
-		System.out.println("Patente 	     : " + getPatente());
+		System.out.println("Patente      : " + getPatente());
 		System.out.println("Marca        : " + getMarca());
 		System.out.println("Modelo       : " + getModelo());
-		System.out.println("Asientos     : " + this.cantPuertas);
+		System.out.println("Asientos     : " + this.cantidadPuertas);
 		System.out.println("Tipo de caja : " + this.cajaCambios);
 
 		if (this.aireAcondicionado)
@@ -70,7 +70,7 @@ public class Automovil extends Vehiculo {
 	
 	public void caracteristicas()
 	{
-		System.out.println("Asientos           : " + this.cantPuertas);
+		System.out.println("Asientos           : " + this.cantidadPuertas);
 		System.out.println("Tipo de caja       : " + this.cajaCambios);
 		System.out.println("Aire Acondicionado : " + this.aireAcondicionado);
 	}

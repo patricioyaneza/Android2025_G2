@@ -21,7 +21,14 @@ public class Principal {
 		 * y mostrar en consola		 * 
 		 * 
 		 */
-		
+		Automovil automovil = new Automovil();
+		automovil.setPatente("SZ7590");
+		automovil.setMarca("Toyota");
+		automovil.setModelo("FH5544");
+		automovil.setAireAcondicionado(true);
+		automovil.setCantidadPuertas(5);
+		automovil.setCajaCambios("Mecanica");
+		automovil.imprimir();
 	}
 
 }
