@@ -1,7 +1,7 @@
 
 public class CuentaUSD extends Cuenta {
 	// atributos
-	int tipoCambio; // guardará el valor actual de 1 dolar
+	private double tipoCambio; // guardará el valor actual de 1 dolar
 
 	
 	// constructores
@@ -11,12 +11,12 @@ public class CuentaUSD extends Cuenta {
 		this.tipoCambio = -1; 
 	}
 	
-	public CuentaUSD(int numeroCuenta, String nombreTitular, double saldoCuenta, int tipoCambio) {
+	public CuentaUSD(int numeroCuenta, String nombreTitular, double saldoCuenta, double tipoCambio) {
 		super(numeroCuenta, nombreTitular, saldoCuenta);
 		this.tipoCambio = tipoCambio;
 	}	
 	// getter and setter // mutador y accesor
-	public int getTipoCambio() {
+	public double getTipoCambio() {
 		return tipoCambio;
 	}
 

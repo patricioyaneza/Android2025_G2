@@ -14,7 +14,7 @@ public class Cuenta {
 
 	public Cuenta (int numeroCuenta, String nombreTitular, double saldoCuenta) {
 		this.numeroCuenta = numeroCuenta;
-		this.nombreTitular = nombreTitular;
+		this.nombreTitular = nombreTitular.trim().toUpperCase();
 		this.saldoCuenta = saldoCuenta;
 	}
 	
@@ -30,7 +30,7 @@ public class Cuenta {
 		return nombreTitular;
 	}
 	public void setNombreTitular(String nombreTitular) {
-		this.nombreTitular = nombreTitular;
+		this.nombreTitular = nombreTitular.trim().toUpperCase();
 	}
 		public double getSaldoCuenta() {
 		return saldoCuenta;
@@ -49,8 +49,15 @@ public class Cuenta {
 		System.out.println("Saldo inicial de la cuenta      : " + this.saldoCuenta);
 		System.out.println();
 		System.out.println("====================================================================");
-
-
 	}
 	
+	public void depositar()
+	{
+		
+	}
+	
+	public void retirar() // girar desde la cuenta
+	{
+		
+	}
 }
