@@ -10,7 +10,12 @@ public class Moto extends Vehiculo {
 		this.medidaManillar = 0;
 		this.estilo = "";
 	}
-
+	public Moto(String patente, String marca, String modelo, int medidaManillar, String estilo) {
+		super(patente, marca, modelo);
+		this.medidaManillar = medidaManillar;
+		this.estilo = estilo;
+	}
+	
 	// getter and setter - accesador / mutador	
 	public int getMedidaManillar() {
 		return medidaManillar;
