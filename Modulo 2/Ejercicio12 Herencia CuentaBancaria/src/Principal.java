@@ -31,8 +31,26 @@ public class Principal {
 		
 		Cuenta cuenta = new Cuenta(10000, "ana", 0);
 		cuenta.imprimir();		
-		cuenta.depositar(9999);		
+		cuenta.depositar(50000);		
 		cuenta.imprimir();
+		
+		cuenta.retirar(5000);
+		cuenta.imprimir();
+		
+		/*
+		 * Ejercicio: Sobre escribir los metodos depositar y retirar para la cuenta en dolares
+		 * probar en main
+		 */
+
+		System.out.print("\nIngrese monto en dolares a depositar: ");
+		double monto = leer.nextDouble();
+		cuentaDolar1.depositar(monto);
+		
+		System.out.print("\nIngrese monto en dolares a Girar: ");
+		monto = leer.nextDouble();
+		cuentaDolar1.retirar(monto);
+		
+		cuentaDolar1.enviarCartola();
 	}
 
 }

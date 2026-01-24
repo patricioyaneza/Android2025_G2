@@ -61,8 +61,16 @@ public class Cuenta {
 		}
 	}
 	
-	public void retirar() // girar desde la cuenta
+	public void retirar(double monto) // girar desde la cuenta
 	{
-		
+		if (monto<=0)
+			System.out.println("No se puede realizar operación solicitada.");
+		else if(this.saldoCuenta < monto)
+			System.out.println("No hay saldo suficiente para girar.");
+		else
+		{
+			this.saldoCuenta-=monto;
+			System.out.println("\nEl giro realizado fue de $" + monto + ". El nuevo saldo es $ " + this.saldoCuenta);	
+		}
 	}
 }
