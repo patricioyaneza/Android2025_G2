@@ -1,4 +1,4 @@
-
+// heredar mas de una clase. varias interface
 public class Gato extends Animal {
 	@Override
 	public String comer() {
