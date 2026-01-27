@@ -8,7 +8,8 @@ public class Animal implements IOperaciones {
 	@Override
 	public boolean guardar() {
 		// TODO Auto-generated method stub
-		return false;
+		System.out.println("Datos guardados");
+		return true;
 	}
 
 	@Override
@@ -18,8 +19,9 @@ public class Animal implements IOperaciones {
 	}
 
 	@Override
-	public void limpiar() {
+	public int modificar() {
 		// TODO Auto-generated method stub
-		
+		return 0;
 	}
+
 }
