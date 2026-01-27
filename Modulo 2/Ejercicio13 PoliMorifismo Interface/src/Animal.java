@@ -1,8 +1,21 @@
 
 public class Animal implements IOperaciones {
-	public static void main(String[] args)
-	{
-		System.out.println("Hola");
+	
+	private String nombre;
+	
+	public Animal() {
+		this.nombre = "";
+	}
+	public Animal(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 
 	@Override
@@ -23,5 +36,26 @@ public class Animal implements IOperaciones {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-
+	
+	
+	public String comer()
+	{
+		return "Comida de animal";
+	}
+	
+	public String dormir()
+	{
+		return "zzzzZZZ de animal";
+	}
+	
+	public String emitirSonido()
+	{
+		return "Ruido animal";
+	}
+	
+	
+	public static void main(String[] args)
+	{
+		System.out.println("Hola");
+	}
 }
