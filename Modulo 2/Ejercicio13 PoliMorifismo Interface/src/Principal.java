@@ -21,13 +21,17 @@ public class Principal {
 		
 		System.out.println("Sonido de animal 3: " + sonido);
 		
+		// creación de colección tipo arraylist para almacenar
+		// n animales (Animal, Perro o Gato)
 		ArrayList<Animal> animales = new ArrayList<Animal>();
-		animales.add(animal);
+		animales.add(animal); // se agrega objeto a la coleccion
 		animales.add(animal2);
 		animales.add(animal3);
 		animales.add(new Perro());
 		animales.add(new Gato());
 		
+		// se utiliza for para recorrer el arraylist y acceder a los
+		// objetos que la coleccion tiene
 		System.out.println("Recorrer arreglo!!!");
 		for(Animal aux: animales) // for each
 		{
