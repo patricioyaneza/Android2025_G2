@@ -20,4 +20,11 @@ class CalculadoraTest {
 		int resultado = c.sumar();		
 		assertNotEquals(3, resultado);
 	}
+	
+	// Ejercicio 25:
+	/*
+	 * Crear 2 pruebas para restar, multiplicar
+	 * crear 3 pruebas para el metodo dividir
+	 * 
+	 */
 }
