@@ -53,9 +53,5 @@ public class Animal implements IOperaciones {
 		return "Ruido animal";
 	}
 	
-	
-	public static void main(String[] args)
-	{
-		System.out.println("Hola");
-	}
+
 }

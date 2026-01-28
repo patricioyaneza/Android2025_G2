@@ -15,5 +15,10 @@ public class Perro extends Animal {
 	public String emitirSonido() {
 		return "Guau!!!";
 	}
+	
+	public void imprimir()
+	{
+		System.out.println("Hola soy un perro");
+	}
 
 }
