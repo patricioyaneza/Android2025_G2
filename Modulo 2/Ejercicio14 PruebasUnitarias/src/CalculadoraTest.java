@@ -138,4 +138,11 @@ class CalculadoraTest {
     	Calculadora calculadora = new Calculadora(7, 2);
         assertEquals(3, calculadora.dividir());
     }
+
+    @Test
+    void dividirDivisionPorCero() {
+		Calculadora calculadora = new Calculadora(10, 0);
+		assertEquals(-1, calculadora.dividir());
+	}
+
 }
