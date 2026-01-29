@@ -3,7 +3,15 @@ public class Calculadora {
 	private int valor1;
 	private int valor2;
 	private double resultado;
-	
+
+	public Calculadora() {
+		this.valor1 = 0;
+		this.valor2 = 0;
+	}
+	public Calculadora(int valor1, int valor2) {
+		this.valor1 = valor1;
+		this.valor2 = valor2;
+	}
 	public int getValor1() {
 		return valor1;
 	}
