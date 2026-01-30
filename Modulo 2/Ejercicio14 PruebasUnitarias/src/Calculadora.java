@@ -1,5 +1,5 @@
-
 public class Calculadora {
+
 	private int valor1;
 	private int valor2;
 	private double resultado;
@@ -12,6 +12,7 @@ public class Calculadora {
 		this.valor1 = valor1;
 		this.valor2 = valor2;
 	}
+
 	public int getValor1() {
 		return valor1;
 	}
@@ -29,7 +30,7 @@ public class Calculadora {
 	}
 	public void setResultado(double resultado) {
 		this.resultado = resultado;
-	}
+	}	
 	
 	public int sumar()
 	{
@@ -50,6 +51,5 @@ public class Calculadora {
 		if(this.valor1 == 0)
 			return 0;		
 		return this.valor1 / this.valor2;
-	}
-	
+	}	
 }
