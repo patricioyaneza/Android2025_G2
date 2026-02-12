@@ -1,0 +1,54 @@
+-- Ejercicio 5: id, nombre, apellido, nacimiento, ciudad, genero, id prov, nom prov y alergias
+-- Ejercicio 6: si la alergia es null que muestre Sin Alergia (investigar)
+select pa.patient_id as 'ID Paciente', 
+concat(pa.first_name,' ', pa.last_name) as 'Nombre Paciente', 
+pa.birth_date as 'Fecha de Nacimiento', 
+pa.city as Ciudad, 
+pa.gender as Genero, 
+pa.province_id as 'Código Provincia', 
+pr.province_name as 'Nombre Provincia', 
+coalesce(allergies, 'Sin Alergia') as Alergias -- ifnull
+from patients pa
+	INNER JOIN province_names pr on pr.province_id = pa.province_id
+
+
+
+-- Ejercicio 7: Mostrar los datos de atención y el paciente atendido
+SELECT  strftime('%d-%m-%Y', ad.admission_date) AS 'Fecha Ingreso',
+        ad.diagnosis AS Diagnostico,
+        pa.patient_id AS ID,
+        pa.first_name AS Nombre,
+        pa.last_name AS Apellido,
+        strftime('%d-%m-%Y', pa.birth_date) AS Nacimiento,
+        pa.city AS Ciudad,
+        pa.gender AS Genero,
+        pr.province_name AS 'Provincia',
+        COALESCE(pa.allergies, 'sin alergias') AS Alergias
+
+  --      ad.attending_doctor_id AS 'ID Doctor'
+FROM patients pa
+	INNER JOIN province_names pr ON pr.province_id = pa.province_id
+	INNER JOIN admissions ad ON ad.patient_id = pa.patient_id;
+
+
+-- Ejercicio 8: Ordenar por fecha de llegada y modificar el diagnostico mostrandolo en mayuscula
+-- Ejercicio 9: Mostrar las atenciones y los datos de los pacientes en orden de llegada y diagnostico en mayúscula 
+y el doctor que atendió. Mostrar las columnas en español
+SELECT  strftime('%d-%m-%Y', ad.admission_date) AS 'Fecha Ingreso',
+        upper(ad.diagnosis) AS Diagnostico,
+        CONCAT(do.first_name,' ',do.last_name) AS 'NOMBRE COMPLETO DOCTOR',
+        pa.patient_id AS ID,
+        pa.first_name AS Nombre,
+        pa.last_name AS Apellido,
+        strftime('%d-%m-%Y', pa.birth_date) AS Nacimiento,
+        pa.city AS Ciudad,
+        pa.gender AS Genero,
+        pr.province_name AS 'Provincia',
+        COALESCE(pa.allergies, 'sin alergias') AS Alergias
+
+  --      ad.attending_doctor_id AS 'ID Doctor'
+FROM patients pa
+	INNER JOIN province_names pr ON pr.province_id = pa.province_id
+	INNER JOIN admissions ad ON ad.patient_id = pa.patient_id
+    INNER JOIN doctors do ON ad.attending_doctor_id =do.doctor_id
+order by ad.admission_date
