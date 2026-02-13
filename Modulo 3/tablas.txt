@@ -47,7 +47,7 @@ CREATE TABLE Producto (
     descripcion VARCHAR(200),
     precio INT NOT NULL CHECK (precio > 0),
     stock INT NOT NULL CHECK (stock >= 0),
-    id categoria INT NOT NULL,
+    id_categoria INT NOT NULL,
     id_marca INT NOT NULL,
     FOREIGN KEY (id_categoria) REFERENCES Categoria(id_categoria),
     FOREIGN KEY (id_marca) REFERENCES Marca(id_marca)
