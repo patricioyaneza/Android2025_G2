@@ -52,3 +52,58 @@ FROM patients pa
 	INNER JOIN admissions ad ON ad.patient_id = pa.patient_id
     INNER JOIN doctors do ON ad.attending_doctor_id =do.doctor_id
 order by ad.admission_date
+
+
+
+-- uso de group by para agrupar filas y contarlas
+select admission_date, count(admission_date)
+FROM admissions
+group by admission_date
+ORDER BY  admission_date -- , count(admission_date) DESC
+
+
+
+
+    
+-- EJERCICIO 10: contar y agrupar pacientes de acuerdo a la ciudades de origen
+
+SELECT city, count(city)
+from patients
+group by city
+ORDER BY COUNT(city) DESC
+
+
+-- EJERCICIO 11: contar y agrupar pacientes de acuerdo a la PROVINCIA de origen para la ciudad de Ontario
+
+SELECT pn.province_name as Provincia,
+	pa.city as Ciudad,
+	COUNT(pa.patient_id) AS 'N° Pacientes'
+FROM patients pa
+	inner JOIN province_names pn ON pa.province_id = pn.province_id
+where pn.province_name ='Ontario'
+GROUP BY pn.province_name, pa.city
+ORDER BY COUNT(pa.patient_id) DESC, pn.province_name,Ciudad;
+
+
+-- Ejercicio 12: Contar la cantidad de pacientes con alérgias a algun compuesto, ordenar alfabeticamente.
+
+SELECT allergies AS Alergia,
+		COUNT(patient_id) AS 'N° Pacientes',
+        concat(((COUNT(patient_id) * 100) / ( select count(*) from patients )), '%') Porcentaje
+FROM patients
+WHERE allergies IS NOT NULL AND trim(allergies) != ''
+GROUP BY allergies
+ORDER BY 2 desc;
+
+-- Ejercicio 13: top 10 de alergias que tienen los pacientes de la ciudad de Hamilton
+
+SELECT pa.allergies AS Alergia,
+		pa.city as Ciudad,
+      	COUNT(pa.patient_id) AS "Nro pacientes",
+      	ROUND( COUNT(pa.patient_id) * 100.0 / (SELECT COUNT(*) FROM patients ), 2) AS porcentaje
+FROM patients pa
+WHERE pa.allergies IS NOT NULL
+and pa.city = 'Hamilton'
+GROUP BY alergia
+ORDER BY porcentaje DESC
+limit 10;
