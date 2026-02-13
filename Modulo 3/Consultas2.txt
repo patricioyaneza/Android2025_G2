@@ -1,0 +1,18 @@
+-- Ejercicio 14: agregar 3 categorias de producto para un supermercado 
+
+insert into categoria (nombre) values ('Electrónica'),('Tecnología'),('Jardín');
+select * from categoria order by id_categoria desc;
+
+insert into categoria (nombre) values ('Ropa');
+
+update categoria set 
+	nombre = 'Vestuario'
+where id_categoria = 4;
+
+-- Ejercicio 15: Modificar los valores de las marcas que ahora esten TODOS en mayusculas 
+SET SQL_SAFE_UPDATES = 0; -- quita modo seguro para modificar
+update marca set 
+	nombre = upper(nombre);
+
+select * from marca;
+-- Ejercicio 16: dejar marcas FREE, PAP y COCACOLA en minuscula

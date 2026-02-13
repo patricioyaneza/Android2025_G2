@@ -99,7 +99,7 @@ ORDER BY 2 desc;
 
 SELECT pa.allergies AS Alergia,
 		pa.city as Ciudad,
-      	COUNT(pa.patient_id) AS "Nro pacientes",
+      	COUNT(pa.patient_id) AS "Nro pacientes", -- AVG, SUM
       	ROUND( COUNT(pa.patient_id) * 100.0 / (SELECT COUNT(*) FROM patients ), 2) AS porcentaje
 FROM patients pa
 WHERE pa.allergies IS NOT NULL
