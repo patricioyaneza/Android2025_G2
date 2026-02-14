@@ -16,3 +16,27 @@ update marca set
 
 select * from marca;
 -- Ejercicio 16: dejar marcas FREE, PAP y COCACOLA en minuscula
+UPDATE marca set 
+nombre = LOWER(nombre) 
+-- WHERE nombre IN ('FREE ','PAP','COCACOLA');
+where id_marca in (2,4,6);
+
+delete from marca
+where id_marca = 3;
+
+select * from marca;
+delete from marca;
+INSERT INTO marca (nombre) values ('Pepsi'), ('Cocacola'),('McCola'),('Free');
+ALTER TABLE marca auto_increment = 1;
+
+TRUNCATE table detalle_factura;
+TRUNCATE table factura;
+
+set AUTOCOMMIT = 0;
+INSERT INTO marca (nombre) values ('PAP');
+COMMIT;
+ROLLBACK;
+
+
+
+
