@@ -19,4 +19,8 @@ ALTER TABLE categoria2 DROP index nombre;
 ALTER TABLE categoria2 ADD constraint nombreUnico unique(nombre); 
 
 
-select * from producto;
+select * from categoria, marca;
+
+INSERT INTO Producto (nombre, descripcion, precio, stock, id_categoria, id_marca) VALUES
+('Coca-Cola 600ml', 'Refresco 600ml', 18, 150, 3, 7),
+('Pepsi 600ml', 'Refresco 600ml', 17, 120, 4, 7)
