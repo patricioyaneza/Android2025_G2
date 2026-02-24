@@ -20,7 +20,11 @@ ALTER TABLE categoria2 ADD constraint nombreUnico unique(nombre);
 
 
 select * from categoria, marca;
+INSERT INTO Categoria VALUES (1,'Bebidas'), (2,'Snacks'),(3,'Lácteos'),(4,'Limpieza'),(5,'Abarrotes');
+INSERT INTO Marca VALUES (1,'Coca-Cola'), (2,'Pepsi'), (3,'Bimbo'), (4,'Lala'),(5,'La Costeña'),(6,'Cloralex');
 
 INSERT INTO Producto (nombre, descripcion, precio, stock, id_categoria, id_marca) VALUES
-('Coca-Cola 600ml', 'Refresco 600ml', 18, 150, 3, 7),
-('Pepsi 600ml', 'Refresco 600ml', 17, 120, 4, 7)
+('Coca-Cola 600ml', 'Refresco 600ml', 18, 150, 1, 1),
+('Pepsi 600ml', 'Refresco 600ml', 17, 120, 1, 2),
+('Jugo de Naranja 1L', 'Jugo natural', 22, 80, 1, 2),
+('Pan Blanco Bimbo', 'Pan grande', 42, 60, 2, 3);
