@@ -28,3 +28,15 @@ INSERT INTO Producto (nombre, descripcion, precio, stock, id_categoria, id_marca
 ('Pepsi 600ml', 'Refresco 600ml', 17, 120, 1, 2),
 ('Jugo de Naranja 1L', 'Jugo natural', 22, 80, 1, 2),
 ('Pan Blanco Bimbo', 'Pan grande', 42, 60, 2, 3);
+
+delete from marca;
+delete from categoria;
+
+CREATE VIEW V_Productos AS
+select c.nombre Categoria, m.nombre Marca, p.id_producto, p.nombre, p.descripcion, p.stock, p.precio
+from producto p
+inner join categoria c on c.id_categoria = p.id_categoria
+inner join marca m on m.id_marca = p.id_marca
+;
+
+select * from v_productos
