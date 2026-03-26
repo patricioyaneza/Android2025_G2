@@ -1,0 +1,1 @@
+Ejercicio, crear un formulario para que el usuario especifique su nombre y este debe ser mostrado en el activity principal, si no se declara colocar como nombre, invitado
