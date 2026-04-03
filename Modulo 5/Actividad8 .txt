@@ -1,0 +1,14 @@
+1.- Crear un Activity que solicite los siguiente datos:
+
+Nombre
+Apellido
+Celular
+Correo
+Edad
+
+
+2.- Guarda estos datos utilizando ShardPreferences mediante un boton
+
+3.- Crear otra Activity y mostrar los datos solicitados.
+
+4.- VAlidar los datos a ingresar
